@@ -1,0 +1,263 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b1adad; /*Color fondo */
+}
+
+/* Header */
+header {
+  color: #45a049;
+  display: flex;
+  justify-content: space-between; /* Centro o espacio */
+  align-items: center; /* Alineamiento vertical */
+  padding: 20px;
+  background-color: #1f3818e3; /* contraste */
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+  color: #ffffff; 
+}
+
+
+
+/* Main content */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+  border-radius: 5px; 
+  background-color: #fff; 
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.5em; 
+}
+
+p {
+  line-height: 1.6;
+  color: #333; 
+}
+
+/* seccion */
+.seccion {
+  margin-bottom: 30px;
+}
+
+h3 {
+  padding: 15px;
+  text-align: center;
+  background-color: #eee; 
+  border-radius: 4px; 
+}
+/*estilo footer*/
+footer {
+  background-color: none;
+  color: #272222c5; /* Color del texto del pie de página */
+  padding: none; 
+  text-align: left;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 5px;
+}
+
+  /* estilo tabla*/
+  table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  
+  /* estilo galeria */
+  .contenedor-galeria {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .galeria {
+    margin: 5px;
+  float: left;
+  width: 180px;
+  }
+
+  .galeria img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .galeria a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .galeria a:hover {
+    transform: scale(1.1);
+  }
+  .galeria h3 {
+    color: rgb(19, 17, 17);
+  }
+  .galeria a .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+  }
+  
+  .galeria a:hover .overlay {
+    opacity: 2;
+  }
+
+  /* encabezado h1 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0; /* margen en el lado izquierdo */
+  right: 0; /* margen en el lado derecho */
+  width: 100%;
+  background-color: #0d4720; /*color de fondo*/
+  box-shadow: 0 30px 4px rgba(35, 49, 37, 0.253); /*sombra encabezado */
+  z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #1f1f1f;
+  border-color: #050505;
+}
+
+/* Estilos para la barra de navegación */
+.navbarpro {
+  position: fixed;
+  top: 90px; /* Ajusta según la altura del encabezado */
+  left: 0; 
+  right: 0; 
+  width: 100%;
+  background-color: #333333; 
+  padding: 10px ; /* Espaciado interno en la parte superior e inferior */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alineación vertical */
+  z-index: 999; /* Asegura que la barra de navegación esté por encima de otros elementos */
+}
+
+.navbarpro a {
+  color: #ffffff; 
+  text-decoration: none; /* Quita el subrayado del enlace */
+  font-weight: bold; /* Texto en negrita */
+  padding: 9px 4%; /* Espaciado interno */
+  border-radius: 5px; /* Bordes */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Efecto de transición para color de fondo y texto */
+}
+
+.navbarpro a:hover {/* Cambia el color de fondo al pasar el cursor */
+  background-color: #0bdb15; 
+  color: #050505; 
+}
+
+/* Estilo para el contenedor de la barra de navegación cuando se desplaza hacia abajo */
+.navbarpro.scrolled {
+  background-color: #0bdb15; /* Cambia el color de fondo al desplazarse*/
+  transition: background-color 0.3s ease; /* Efecto de transición*/
+}
+
+/* Espaciado elementos de la barra de navegación */
+.navbarpro a:first-child {
+  margin-right: 20px;
+}
+.navbarpro a:first-child {
+  margin-left: 20px;
+}
+.container {
+  margin-top: 100px; /* Ajusta según la altura del encabezado y barra de navegación */
+}
+
+
+/* estilo formulario*/
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+  }
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /*etiquetas del formulario */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Estilos para los campos de entrada */
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para el botón de enviar */
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* botón de enviar al pasar el ratón */
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
